@@ -1,4 +1,4 @@
-const prompt = require('../node_modules/prompt-sync')({ sigint: true })
+const prompt = require('prompt-sync')({ sigint: true })
 
 function getComputerChoice() {
     const max = 3;
@@ -34,13 +34,6 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playGame() {
-    for (let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-
-        playRound(humanSelection, computerSelection);
-        console.log(`${humanScore} - ${computerScore}`);
-    }
 
     console.log(`The result is: ${humanScore} - ${computerScore}`);
 
