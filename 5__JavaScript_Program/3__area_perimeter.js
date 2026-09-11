@@ -1,5 +1,6 @@
-const prompt = require('./node_modules/prompt-sync')({ sigint: true })
+const prompt = require('./node_modules/prompt-sync')({ sigint: true });
 
+// Input width, length and print area, perimeter
 const width = Number(prompt("Enter width of a rectangle: "));
 const length = Number(prompt("Enter length of a rectangle: "));
 

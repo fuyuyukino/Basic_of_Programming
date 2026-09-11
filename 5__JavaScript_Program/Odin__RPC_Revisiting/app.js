@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')({ sigint: true })
+const prompt = require('../node_modules/prompt-sync')({ sigint: true })
 
 function getComputerChoice() {
     const max = 3;
